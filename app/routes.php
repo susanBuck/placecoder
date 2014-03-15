@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/{w}/{h}', function($w, $h)
 {
-	return View::make('hello');
+	return $w.$h;
 });
